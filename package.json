@@ -1,0 +1,44 @@
+{
+  "name": "server-rendering",
+  "version": "1.0.0",
+  "description": "server rendering base on react, react-router and express",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack -w --mode=development & nodemon ./dist/server.js",
+    "build": "webpack -w --mode=production & nodemon ./dist/server.js",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAaRrLl/Server-Rendering.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "CAaRrLl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CAaRrLl/Server-Rendering/issues"
+  },
+  "homepage": "https://github.com/CAaRrLl/Server-Rendering#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.18.3",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "serialize-javascript": "^1.5.0"
+  }
+}
